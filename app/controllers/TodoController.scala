@@ -19,7 +19,6 @@ class TodoController @Inject() (val controllerComponents: ControllerComponents)
     for {
       todoList <- TodoRepository.all
     } yield {
-      println(todoList(1).v)
       val vv = ViewValueTodoList(
         viewValue = ViewValueHome(
           title = "TODO LIST",
