@@ -40,9 +40,9 @@ object Todo {
   sealed abstract class Status(val code: Short, val name: String)
       extends EnumStatus
   object Status extends EnumStatus.Of[Status] {
-    case object TODO     extends Status(code = 1, name = "着手前")
-    case object PROGRESS extends Status(code = 2, name = "進行中")
-    case object END      extends Status(code = 3, name = "終了")
+    case object TODO     extends Status(code = 0, name = "着手前")
+    case object PROGRESS extends Status(code = 1, name = "進行中")
+    case object END      extends Status(code = 2, name = "終了")
   }
 
   // INSERT時のIDがAutoincrementのため,IDなしであることを示すオブジェクトに変換

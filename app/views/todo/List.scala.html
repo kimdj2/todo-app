@@ -1,0 +1,16 @@
+@*
+ *
+ * to do sample project
+ *
+ *@
+
+@(vv: model.ViewValueTodoList)
+@common.Default(vv.viewValue){
+    @for(todo <- vv.todoList) {
+        <div>
+            <span style="float:left;width:20%;">@todo.v.title</span>
+            <span style="float:right;width:50%;">@todo.v.body</span>
+            <span style="float:right;width:30%;">@todo.v.state</span>
+        </div>
+    }
+}
