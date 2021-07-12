@@ -39,9 +39,9 @@ object TodoCategory {
   sealed abstract class Color(val code: Short, val name: String)
       extends EnumStatus
   object Color extends EnumStatus.Of[Color] {
-    case object RED    extends Status(code = 1, name = "赤")
-    case object YELLOW extends Status(code = 2, name = "黄")
-    case object BLUE   extends Status(code = 3, name = "青")
+    case object RED    extends Color(code = 1, name = "赤")
+    case object YELLOW extends Color(code = 2, name = "黄")
+    case object BLUE   extends Color(code = 3, name = "青")
   }
 
   // INSERT時のIDがAutoincrementのため,IDなしであることを示すオブジェクトに変換
