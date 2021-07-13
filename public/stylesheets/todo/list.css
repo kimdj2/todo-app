@@ -46,6 +46,7 @@
 }
 .todo-list .todo-list__body .todo-list__body--content {
     padding: 4px 10px;
+    white-space: pre-wrap;
     font-size: 13px;
 }
 
