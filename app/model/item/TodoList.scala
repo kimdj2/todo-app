@@ -6,7 +6,7 @@ case class TodoList(
 )
 object TodoList {
   def apply(
-      todo: TodoItem,
+      todo:     TodoItem,
       category: Option[TodoCategoryItem]
   ): TodoList = {
     new TodoList(todo = todo, category = category)
