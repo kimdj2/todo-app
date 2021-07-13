@@ -1,16 +1,45 @@
 @*
  *
- * to do sample project
+ * TODOアプリ−リスト画面
  *
  *@
 
-@(vv: model.ViewValueTodoList)
-@common.Default(vv.viewValue){
-    @for(todo <- vv.todoList) {
-        <div>
-            <span style="float:left;width:20%;">@todo.v.title</span>
-            <span style="float:right;width:50%;">@todo.v.body</span>
-            <span style="float:right;width:30%;">@todo.v.state</span>
+@import lib.model.TodoCategory
+@(vv: model.view.ViewValueTodoList)
+@common.Default(vv.viewValue) { 
+  
+
+  <div　class="todo-list">
+    @for(model <- vv.model) {
+      <div class="todo-list">
+        <div class="todo-list__title">
+          <h1>@model.todo.title</h1>
+          <span class="todo-list__title--state">@model.todo.state.name</span>
         </div>
-    }
+        <div class="todo-list__body">
+          <span class="todo-list__body--content">
+            @model.todo.body
+          </span>
+        </div>
+        <div class="todo-list__category">
+          @{
+            model.category match {
+              case Some(category) => {
+                val colorClass = category.color match {
+                  case TodoCategory.Color.RED    => "todo-list__category-name--red"
+                  case TodoCategory.Color.YELLOW => "todo-list__category-name--yellow"
+                  case TodoCategory.Color.BLUE   => "todo-list__category-name--blue"
+                  case _ => ""
+                }
+                val name = category.name
+                Html(s"""
+                  <span class="todo-list__category-name $colorClass">$name</span>
+                """)
+              }
+            }
+          }
+        </div>
+      </div>
+    }   
+  </div>
 }

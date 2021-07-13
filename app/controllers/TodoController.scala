@@ -6,9 +6,8 @@ package controllers
 import javax.inject._
 import play.api.mvc._
 
-import model.ViewValueTodoList
-import model.ViewValueHome
-import lib.persistence.onMySQL.TodoRepository
+import model.view.ViewValueTodoList
+import service.TodoService
 import scala.concurrent.ExecutionContext.Implicits.global
 
 @Singleton
@@ -17,16 +16,9 @@ class TodoController @Inject() (val controllerComponents: ControllerComponents)
 
   def index() = Action.async { implicit req =>
     for {
-      todoList <- TodoRepository.all
+      todoList <- TodoService.all
     } yield {
-      val vv = ViewValueTodoList(
-        viewValue = ViewValueHome(
-          title = "TODO LIST",
-          cssSrc = Seq("main.css"),
-          jsSrc = Seq("main.js")
-        ),
-        todoList = todoList
-      )
+      val vv = ViewValueTodoList(todoList)
       Ok(views.html.todo.List(vv))
     }
   }

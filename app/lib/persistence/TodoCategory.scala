@@ -18,6 +18,12 @@ case class TodoCategoryRepository[P <: JdbcProfile]()(implicit val driver: P)
 
   import api._
 
+  /** Get All Todo Data
+    */
+  def all(): Future[Seq[EntityEmbeddedId]] =
+    RunDBAction(TodoCategoryTable, "slave") { _.result }
+
+
   /**
     * Get TodoCategory Data
     */
