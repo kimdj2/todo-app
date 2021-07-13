@@ -1,3 +1,24 @@
+.todo .todo-create {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.todo .todo-create button {
+    background-color: aquamarine;
+    border-radius: 3px;
+    border: 1px solid aquamarine;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.todo .todo-create button:hover {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+
 .todo-list {
     border: 1px solid;
     margin-bottom: 15px;
@@ -51,3 +72,25 @@
     background-color: skyblue;
 }
 
+.todo-list .todo-list__button-area {
+    padding: 10px 10px;
+    text-align: right;
+}
+
+.todo-list .todo-list__button-area .todo-list__button-edit {
+    background-color: skyblue;
+    border-radius: 3px;
+    border: 1px solid skyblue;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.todo-list .todo-list__button-area .todo-list__button-delete {
+    background-color: pink;
+    border-radius: 3px;
+    border: 1px solid pink;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}

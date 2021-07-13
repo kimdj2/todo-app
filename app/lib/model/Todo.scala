@@ -47,7 +47,7 @@ object Todo {
 
   // INSERT時のIDがAutoincrementのため,IDなしであることを示すオブジェクトに変換
   def apply(
-      categoryId: TodoCategory.Id,
+      categoryId:  TodoCategory.Id,
       title:       String,
       body:        String,
       state:       Status

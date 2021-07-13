@@ -13,7 +13,7 @@ object ViewValueTodoList {
   def apply(model: Seq[TodoList]): ViewValueTodoList = {
     ViewValueTodoList(
       viewValue = ViewValueHome(
-        title = "TODO LIST",
+        title = "TODO一覧",
         cssSrc = Seq("main.css", "todo/list.css"),
         jsSrc = Seq("main.js")
       ),
