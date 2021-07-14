@@ -29,28 +29,27 @@
     width: 100%;
 }
 
-.todo-form .todo-form__button-area .todo-form__button-submit {
-    background-color: aquamarine;
+.todo-form .todo-form__button-area button {
     border-radius: 3px;
-    border: 1px solid aquamarine;
     width: 100px;
     height: 30px;
     cursor: pointer;
+}
+
+.todo-form .todo-form__button-area .todo-form__button-submit {
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
 }
 
 .todo-form .todo-form__button-area .todo-form__button-back {
     background-color: pink;
-    border-radius: 3px;
     border: 1px solid pink;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
 }
-
 
 .todo-form dl dd.error {
     color: red;
 }
+
 .todo-form dl.error{
     background-color: pink;
 }

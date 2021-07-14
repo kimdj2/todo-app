@@ -11,7 +11,7 @@ case class ViewValueError(
 ) extends ViewValueCommon
 
 object ViewValueError {
-  def apply(): ViewValueError ={
-    new ViewValueError("エラー", Seq(), Seq())
+  def apply(): ViewValueError = {
+    new ViewValueError("エラー", Seq("main.css"), Seq("main.js"))
   }
 }
