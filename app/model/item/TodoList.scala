@@ -9,6 +9,7 @@ object TodoList {
       todo:     TodoItem,
       category: Option[TodoCategoryItem]
   ): TodoList = {
+    
     new TodoList(todo = todo, category = category)
   }
 }

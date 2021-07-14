@@ -13,12 +13,14 @@ import play.api.i18n.I18nSupport
 import model.view.ViewValueTodoList
 import model.view.ViewValueTodoCreate
 import model.view.ViewValueTodoEdit
+import model.ViewValueError
 
 import service.TodoService
 import service.TodoCategoryService
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.Try
 
 @Singleton
 class TodoController @Inject() (val controllerComponents: ControllerComponents)
@@ -68,7 +70,7 @@ class TodoController @Inject() (val controllerComponents: ControllerComponents)
   }
 
   def edit(id: Long) = Action.async { implicit req =>
-    for {
+    (for {
       categories <- TodoCategoryService.all
       todo <- TodoService.get(id)
     } yield {
@@ -86,6 +88,9 @@ class TodoController @Inject() (val controllerComponents: ControllerComponents)
           )
         )
       )
+    }) recover { 
+      case _: Exception =>
+            NotFound(views.html.error.page404(ViewValueError()))
     }
   }
 
@@ -107,22 +112,23 @@ class TodoController @Inject() (val controllerComponents: ControllerComponents)
             )
           }
         },
-        (todoData: TodoEdit) => {
-          for {
-            _ <- TodoService.update(id, todoData)
-          } yield {
-            Redirect(routes.TodoController.index())
+        (todoData: TodoEdit) =>
+          (
+            for {
+              _ <- TodoService.update(id, todoData)
+            } yield Redirect(routes.TodoController.index())
+          ) recover { case _: Exception =>
+            NotFound(views.html.error.page404(ViewValueError()))
           }
-        }
       )
   }
 
   def delete(id: Long) = Action.async { implicit req =>
-    for {
-      categories <- TodoService.delete(id)
-    } yield {
-      Redirect(routes.TodoController.index())
+    (for {
+      _ <- TodoService.delete(id)
+    } yield Redirect(routes.TodoController.index())) recover {
+      case _: Exception =>
+        NotFound(views.html.error.page404(ViewValueError()))
     }
   }
-
 }

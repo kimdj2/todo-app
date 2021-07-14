@@ -38,7 +38,13 @@ object TodoService {
             )
           )
         TodoList(
-          TodoItem(todo.id, todo.v.title, todo.v.body, todo.v.state, todo.v.categoryId),
+          TodoItem(
+            todo.id,
+            todo.v.title,
+            todo.v.body,
+            todo.v.state,
+            todo.v.categoryId
+          ),
           category
         )
       }
@@ -63,15 +69,18 @@ object TodoService {
       todoOpt match {
         case Some(todo) => {
           TodoRepository.update(
-            new Todo.EmbeddedId(todo.v.copy(
-              title = form.title,
-              body = form.body,
-              categoryId = TodoCategory.Id(form.categoryId),
-              state = Todo.Status(form.state.toShort)
-            ))
+            new Todo.EmbeddedId(
+              todo.v.copy(
+                title = form.title,
+                body = form.body,
+                categoryId = TodoCategory.Id(form.categoryId),
+                state = Todo.Status(form.state.toShort)
+              )
+            )
           )
           todo.v.id
         }
+        case None => throw new Exception("データなし")
       }
     }
   }
@@ -81,7 +90,15 @@ object TodoService {
       todoOpt <- TodoRepository.get(Todo.Id(id))
     } yield {
       todoOpt match {
-        case Some(todo) => TodoItem(todo.id, todo.v.title, todo.v.body, todo.v.state, todo.v.categoryId)
+        case Some(todo) =>
+          TodoItem(
+            todo.id,
+            todo.v.title,
+            todo.v.body,
+            todo.v.state,
+            todo.v.categoryId
+          )
+        case None => throw new Exception("データなし")
       }
     }
   }
@@ -92,6 +109,7 @@ object TodoService {
     } yield {
       todoOpt match {
         case Some(todo) => todo.v.id
+        case None       => throw new Exception("データなし")
       }
     }
   }
