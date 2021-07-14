@@ -4,12 +4,16 @@
  *
  *@
 
+@import helper._
 @import lib.model.TodoCategory
-@(vv: model.view.ViewValueTodoList)
-@common.Default(vv.viewValue) { 
-  
+@import helpers.TodoCategoryHelper
 
-  <div　class="todo-list">
+@(vv: model.view.ViewValueTodoList)(implicit request: RequestHeader, messages: Messages)
+@common.Default(vv.viewValue) { 
+  <div class="todo">
+    <div class="todo-create">
+      <button onclick="location.href='@controllers.routes.TodoController.create'">作成</button>
+    </div>
     @for(model <- vv.model) {
       <div class="todo-list">
         <div class="todo-list__title">
@@ -17,27 +21,30 @@
           <span class="todo-list__title--state">@model.todo.state.name</span>
         </div>
         <div class="todo-list__body">
-          <span class="todo-list__body--content">
+          <div class="todo-list__body--content">
             @model.todo.body
-          </span>
+          </div>
         </div>
         <div class="todo-list__category">
           @{
             model.category match {
               case Some(category) => {
-                val colorClass = category.color match {
-                  case TodoCategory.Color.RED    => "todo-list__category-name--red"
-                  case TodoCategory.Color.YELLOW => "todo-list__category-name--yellow"
-                  case TodoCategory.Color.BLUE   => "todo-list__category-name--blue"
-                  case _ => ""
-                }
                 val name = category.name
+                val style = TodoCategoryHelper.getStateStyle(category.color)
                 Html(s"""
-                  <span class="todo-list__category-name $colorClass">$name</span>
+                  <span class="todo-list__category-name $style">$name</span>
                 """)
               }
+              case None => ""
             }
           }
+        </div>
+        <div class="todo-list__button-area">
+          @helper.form(action = routes.TodoController.delete(model.todo.id)) {
+            @CSRF.formField
+            <button type="button" class="todo-list__button-edit" onclick="location.href='@controllers.routes.TodoController.edit(model.todo.id)'">編集</button>
+            <button type="submit" class="todo-list__button-delete" >削除</button>
+          }    
         </div>
       </div>
     }   
