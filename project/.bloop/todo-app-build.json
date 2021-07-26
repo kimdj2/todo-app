@@ -1,15 +1,15 @@
 {
     "version": "1.4.0",
     "project": {
-        "name": "education-app-build",
-        "directory": "/Users/dongjin.kim/project/education-app/project",
-        "workspaceDir": "/Users/dongjin.kim/project/education-app/project",
+        "name": "todo-app-build",
+        "directory": "/Users/dongjin.kim/project/todo-app/project",
+        "workspaceDir": "/Users/dongjin.kim/project/todo-app/project",
         "sources": [
-            "/Users/dongjin.kim/project/education-app/project/src/main/scala-2.12",
-            "/Users/dongjin.kim/project/education-app/project/src/main/scala",
-            "/Users/dongjin.kim/project/education-app/project/src/main/java",
-            "/Users/dongjin.kim/project/education-app/project/src/main/scala-sbt-1.0",
-            "/Users/dongjin.kim/project/education-app/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/Users/dongjin.kim/project/todo-app/project/src/main/scala-2.12",
+            "/Users/dongjin.kim/project/todo-app/project/src/main/scala",
+            "/Users/dongjin.kim/project/todo-app/project/src/main/java",
+            "/Users/dongjin.kim/project/todo-app/project/src/main/scala-sbt-1.0",
+            "/Users/dongjin.kim/project/todo-app/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -176,11 +176,11 @@
             "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt.ivy/ivy/jars/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar",
             "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-compile_2.12/jars/zinc-compile_2.12-1.2.3.jar"
         ],
-        "out": "/Users/dongjin.kim/project/education-app/project/.bloop/education-app-build",
-        "classesDir": "/Users/dongjin.kim/project/education-app/project/.bloop/education-app-build/scala-2.12/sbt-1.0/classes",
+        "out": "/Users/dongjin.kim/project/todo-app/project/.bloop/todo-app-build",
+        "classesDir": "/Users/dongjin.kim/project/todo-app/project/.bloop/todo-app-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/Users/dongjin.kim/project/education-app/project/src/main/resources",
-            "/Users/dongjin.kim/project/education-app/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/Users/dongjin.kim/project/todo-app/project/src/main/resources",
+            "/Users/dongjin.kim/project/todo-app/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -195,7 +195,7 @@
                 "/Users/dongjin.kim/.sbt/boot/scala-2.12.7/lib/scala-reflect.jar",
                 "/Users/dongjin.kim/.sbt/boot/scala-2.12.7/lib/scala-xml_2.12-1.0.6.jar"
             ],
-            "analysis": "/Users/dongjin.kim/project/education-app/project/target/streams/compile/bloopAnalysisOut/$global/streams/inc_compile_2.12.zip",
+            "analysis": "/Users/dongjin.kim/project/todo-app/project/target/streams/compile/bloopAnalysisOut/$global/streams/inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -264,7 +264,7 @@
             "config": {
                 "home": "/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre",
                 "options": [
-                    "-Duser.dir=/Users/dongjin.kim/project/education-app/project"
+                    "-Duser.dir=/Users/dongjin.kim/project/todo-app/project"
                 ]
             },
             "mainClass": [
@@ -303,6 +303,11 @@
                         {
                             "name": "scala-library",
                             "path": "/Users/dongjin.kim/.sbt/boot/scala-2.12.7/lib/scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar"
                         }
                     ]
                 },
@@ -479,6 +484,11 @@
                         {
                             "name": "scala-compiler",
                             "path": "/Users/dongjin.kim/.sbt/boot/scala-2.12.7/lib/scala-compiler.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.12.7-sources.jar"
                         }
                     ]
                 },
@@ -490,6 +500,11 @@
                         {
                             "name": "scala-reflect",
                             "path": "/Users/dongjin.kim/.sbt/boot/scala-2.12.7/lib/scala-reflect.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.7-sources.jar"
                         }
                     ]
                 },
@@ -567,6 +582,11 @@
                         {
                             "name": "io_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/io_2.12/jars/io_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "io_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/io_2.12/srcs/io_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -578,6 +598,11 @@
                         {
                             "name": "apple-file-events",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.swoval/apple-file-events/jars/apple-file-events-1.3.2.jar"
+                        },
+                        {
+                            "name": "apple-file-events",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.swoval/apple-file-events/srcs/apple-file-events-1.3.2-sources.jar"
                         }
                     ]
                 },
@@ -589,6 +614,11 @@
                         {
                             "name": "jna-platform",
                             "path": "/Users/dongjin.kim/.ivy2/cache/net.java.dev.jna/jna-platform/jars/jna-platform-4.5.0.jar"
+                        },
+                        {
+                            "name": "jna-platform",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/net.java.dev.jna/jna-platform/srcs/jna-platform-4.5.0-sources.jar"
                         }
                     ]
                 },
@@ -941,6 +971,11 @@
                         {
                             "name": "jsch",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.54.jar"
+                        },
+                        {
+                            "name": "jsch",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.jcraft/jsch/srcs/jsch-0.1.54-sources.jar"
                         }
                     ]
                 },
@@ -1238,6 +1273,11 @@
                         {
                             "name": "sbt-bloop",
                             "path": "/Users/dongjin.kim/.ivy2/cache/scala_2.12/sbt_1.0/ch.epfl.scala/sbt-bloop/jars/sbt-bloop-1.4.6.jar"
+                        },
+                        {
+                            "name": "sbt-bloop",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/scala_2.12/sbt_1.0/ch.epfl.scala/sbt-bloop/srcs/sbt-bloop-1.4.6-sources.jar"
                         }
                     ]
                 },
@@ -1249,6 +1289,11 @@
                         {
                             "name": "gson",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.7.jar"
+                        },
+                        {
+                            "name": "gson",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.7-sources.jar"
                         }
                     ]
                 },
@@ -1260,6 +1305,11 @@
                         {
                             "name": "jsr305",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar"
                         }
                     ]
                 },
@@ -1271,6 +1321,11 @@
                         {
                             "name": "sbt",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-1.2.4.jar"
+                        },
+                        {
+                            "name": "sbt",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/sbt/srcs/sbt-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1282,6 +1337,11 @@
                         {
                             "name": "main_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/main_2.12/jars/main_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "main_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/main_2.12/srcs/main_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1293,6 +1353,11 @@
                         {
                             "name": "logic_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/logic_2.12/jars/logic_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "logic_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/logic_2.12/srcs/logic_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1304,6 +1369,11 @@
                         {
                             "name": "collections_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/collections_2.12/jars/collections_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "collections_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/collections_2.12/srcs/collections_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1315,6 +1385,11 @@
                         {
                             "name": "sjson-new-scalajson_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/sjson-new-scalajson_2.12/jars/sjson-new-scalajson_2.12-0.8.2.jar"
+                        },
+                        {
+                            "name": "sjson-new-scalajson_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/sjson-new-scalajson_2.12/srcs/sjson-new-scalajson_2.12-0.8.2-sources.jar"
                         }
                     ]
                 },
@@ -1326,6 +1401,11 @@
                         {
                             "name": "sjson-new-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/sjson-new-core_2.12/jars/sjson-new-core_2.12-0.8.2.jar"
+                        },
+                        {
+                            "name": "sjson-new-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/sjson-new-core_2.12/srcs/sjson-new-core_2.12-0.8.2-sources.jar"
                         }
                     ]
                 },
@@ -1337,6 +1417,11 @@
                         {
                             "name": "shaded-scalajson_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/shaded-scalajson_2.12/jars/shaded-scalajson_2.12-1.0.0-M4.jar"
+                        },
+                        {
+                            "name": "shaded-scalajson_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/shaded-scalajson_2.12/srcs/shaded-scalajson_2.12-1.0.0-M4-sources.jar"
                         }
                     ]
                 },
@@ -1348,6 +1433,11 @@
                         {
                             "name": "jawn-parser_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.spire-math/jawn-parser_2.12/jars/jawn-parser_2.12-0.10.4.jar"
+                        },
+                        {
+                            "name": "jawn-parser_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.spire-math/jawn-parser_2.12/srcs/jawn-parser_2.12-0.10.4-sources.jar"
                         }
                     ]
                 },
@@ -1359,6 +1449,11 @@
                         {
                             "name": "util-position_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-position_2.12/jars/util-position_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-position_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-position_2.12/srcs/util-position_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1370,6 +1465,11 @@
                         {
                             "name": "util-relation_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-relation_2.12/jars/util-relation_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-relation_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-relation_2.12/srcs/util-relation_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1381,6 +1481,11 @@
                         {
                             "name": "actions_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/actions_2.12/jars/actions_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "actions_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/actions_2.12/srcs/actions_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1392,6 +1497,11 @@
                         {
                             "name": "completion_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/completion_2.12/jars/completion_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "completion_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/completion_2.12/srcs/completion_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1403,6 +1513,11 @@
                         {
                             "name": "jline",
                             "path": "/Users/dongjin.kim/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+                        },
+                        {
+                            "name": "jline",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/jline/jline/srcs/jline-2.14.6-sources.jar"
                         }
                     ]
                 },
@@ -1414,6 +1529,11 @@
                         {
                             "name": "util-control_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-control_2.12/jars/util-control_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-control_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-control_2.12/srcs/util-control_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1425,6 +1545,11 @@
                         {
                             "name": "run_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/run_2.12/jars/run_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "run_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/run_2.12/srcs/run_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1436,6 +1561,11 @@
                         {
                             "name": "util-logging_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-logging_2.12/jars/util-logging_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-logging_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-logging_2.12/srcs/util-logging_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1447,6 +1577,11 @@
                         {
                             "name": "util-interface",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-interface/jars/util-interface-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-interface",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-interface/srcs/util-interface-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1458,6 +1593,11 @@
                         {
                             "name": "log4j-api",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.8.1.jar"
+                        },
+                        {
+                            "name": "log4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.apache.logging.log4j/log4j-api/srcs/log4j-api-2.8.1-sources.jar"
                         }
                     ]
                 },
@@ -1469,6 +1609,11 @@
                         {
                             "name": "log4j-core",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.apache.logging.log4j/log4j-core/jars/log4j-core-2.8.1.jar"
+                        },
+                        {
+                            "name": "log4j-core",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.apache.logging.log4j/log4j-core/srcs/log4j-core-2.8.1-sources.jar"
                         }
                     ]
                 },
@@ -1480,6 +1625,11 @@
                         {
                             "name": "disruptor",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.lmax/disruptor/jars/disruptor-3.3.6.jar"
+                        },
+                        {
+                            "name": "disruptor",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.lmax/disruptor/srcs/disruptor-3.3.6-sources.jar"
                         }
                     ]
                 },
@@ -1491,6 +1641,11 @@
                         {
                             "name": "zinc-classpath_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-classpath_2.12/jars/zinc-classpath_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-classpath_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-classpath_2.12/srcs/zinc-classpath_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1502,6 +1657,11 @@
                         {
                             "name": "compiler-interface",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/compiler-interface/jars/compiler-interface-1.2.3.jar"
+                        },
+                        {
+                            "name": "compiler-interface",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/compiler-interface/srcs/compiler-interface-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1513,6 +1673,11 @@
                         {
                             "name": "task-system_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/task-system_2.12/jars/task-system_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "task-system_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/task-system_2.12/srcs/task-system_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1524,6 +1689,11 @@
                         {
                             "name": "tasks_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/tasks_2.12/jars/tasks_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "tasks_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/tasks_2.12/srcs/tasks_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1535,6 +1705,11 @@
                         {
                             "name": "util-cache_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-cache_2.12/jars/util-cache_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-cache_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-cache_2.12/srcs/util-cache_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1546,6 +1721,11 @@
                         {
                             "name": "sjson-new-murmurhash_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/sjson-new-murmurhash_2.12/jars/sjson-new-murmurhash_2.12-0.8.2.jar"
+                        },
+                        {
+                            "name": "sjson-new-murmurhash_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/sjson-new-murmurhash_2.12/srcs/sjson-new-murmurhash_2.12-0.8.2-sources.jar"
                         }
                     ]
                 },
@@ -1557,6 +1737,11 @@
                         {
                             "name": "testing_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/testing_2.12/jars/testing_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "testing_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/testing_2.12/srcs/testing_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1568,6 +1753,11 @@
                         {
                             "name": "test-agent",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/test-agent/jars/test-agent-1.2.4.jar"
+                        },
+                        {
+                            "name": "test-agent",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/test-agent/srcs/test-agent-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1579,6 +1769,11 @@
                         {
                             "name": "test-interface",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar"
+                        },
+                        {
+                            "name": "test-interface",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar"
                         }
                     ]
                 },
@@ -1590,6 +1785,11 @@
                         {
                             "name": "launcher-interface",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/launcher-interface/jars/launcher-interface-1.0.4.jar"
+                        },
+                        {
+                            "name": "launcher-interface",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/launcher-interface/srcs/launcher-interface-1.0.4-sources.jar"
                         }
                     ]
                 },
@@ -1601,6 +1801,11 @@
                         {
                             "name": "util-tracking_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-tracking_2.12/jars/util-tracking_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-tracking_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-tracking_2.12/srcs/util-tracking_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1612,6 +1817,11 @@
                         {
                             "name": "zinc-apiinfo_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-apiinfo_2.12/jars/zinc-apiinfo_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-apiinfo_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-apiinfo_2.12/srcs/zinc-apiinfo_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1623,6 +1833,11 @@
                         {
                             "name": "compiler-bridge_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/compiler-bridge_2.12/jars/compiler-bridge_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "compiler-bridge_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/compiler-bridge_2.12/srcs/compiler-bridge_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1634,6 +1849,11 @@
                         {
                             "name": "zinc-classfile_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-classfile_2.12/jars/zinc-classfile_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-classfile_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-classfile_2.12/srcs/zinc-classfile_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1645,6 +1865,11 @@
                         {
                             "name": "librarymanagement-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/librarymanagement-core_2.12/jars/librarymanagement-core_2.12-1.2.1.jar"
+                        },
+                        {
+                            "name": "librarymanagement-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/librarymanagement-core_2.12/srcs/librarymanagement-core_2.12-1.2.1-sources.jar"
                         }
                     ]
                 },
@@ -1656,6 +1881,11 @@
                         {
                             "name": "gigahorse-okhttp_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/gigahorse-okhttp_2.12/jars/gigahorse-okhttp_2.12-0.3.0.jar"
+                        },
+                        {
+                            "name": "gigahorse-okhttp_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/gigahorse-okhttp_2.12/srcs/gigahorse-okhttp_2.12-0.3.0-sources.jar"
                         }
                     ]
                 },
@@ -1667,6 +1897,11 @@
                         {
                             "name": "gigahorse-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/gigahorse-core_2.12/jars/gigahorse-core_2.12-0.3.0.jar"
+                        },
+                        {
+                            "name": "gigahorse-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.eed3si9n/gigahorse-core_2.12/srcs/gigahorse-core_2.12-0.3.0-sources.jar"
                         }
                     ]
                 },
@@ -1678,6 +1913,11 @@
                         {
                             "name": "ssl-config-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.2.2.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1689,6 +1929,11 @@
                         {
                             "name": "reactive-streams",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.0-sources.jar"
                         }
                     ]
                 },
@@ -1700,6 +1945,11 @@
                         {
                             "name": "okhttp",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.squareup.okhttp3/okhttp/jars/okhttp-3.7.0.jar"
+                        },
+                        {
+                            "name": "okhttp",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.squareup.okhttp3/okhttp/srcs/okhttp-3.7.0-sources.jar"
                         }
                     ]
                 },
@@ -1711,6 +1961,11 @@
                         {
                             "name": "okio",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.squareup.okio/okio/jars/okio-1.12.0.jar"
+                        },
+                        {
+                            "name": "okio",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.squareup.okio/okio/srcs/okio-1.12.0-sources.jar"
                         }
                     ]
                 },
@@ -1722,6 +1977,11 @@
                         {
                             "name": "okhttp-urlconnection",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.squareup.okhttp3/okhttp-urlconnection/jars/okhttp-urlconnection-3.7.0.jar"
+                        },
+                        {
+                            "name": "okhttp-urlconnection",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.squareup.okhttp3/okhttp-urlconnection/srcs/okhttp-urlconnection-3.7.0-sources.jar"
                         }
                     ]
                 },
@@ -1733,6 +1993,11 @@
                         {
                             "name": "zinc-ivy-integration_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-ivy-integration_2.12/jars/zinc-ivy-integration_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-ivy-integration_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-ivy-integration_2.12/srcs/zinc-ivy-integration_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1744,6 +2009,11 @@
                         {
                             "name": "zinc-compile-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-compile-core_2.12/jars/zinc-compile-core_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-compile-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-compile-core_2.12/srcs/zinc-compile-core_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1755,6 +2025,11 @@
                         {
                             "name": "zinc_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc_2.12/jars/zinc_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc_2.12/srcs/zinc_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1766,6 +2041,11 @@
                         {
                             "name": "zinc-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-core_2.12/jars/zinc-core_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-core_2.12/srcs/zinc-core_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1777,6 +2057,11 @@
                         {
                             "name": "zinc-persist_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-persist_2.12/jars/zinc-persist_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-persist_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-persist_2.12/srcs/zinc-persist_2.12-1.2.3-sources.jar"
                         }
                     ]
                 },
@@ -1788,6 +2073,11 @@
                         {
                             "name": "scalapb-runtime_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.trueaccord.scalapb/scalapb-runtime_2.12/jars/scalapb-runtime_2.12-0.6.0.jar"
+                        },
+                        {
+                            "name": "scalapb-runtime_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.trueaccord.scalapb/scalapb-runtime_2.12/srcs/scalapb-runtime_2.12-0.6.0-sources.jar"
                         }
                     ]
                 },
@@ -1799,6 +2089,11 @@
                         {
                             "name": "lenses_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.trueaccord.lenses/lenses_2.12/jars/lenses_2.12-0.4.12.jar"
+                        },
+                        {
+                            "name": "lenses_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.trueaccord.lenses/lenses_2.12/srcs/lenses_2.12-0.4.12-sources.jar"
                         }
                     ]
                 },
@@ -1810,6 +2105,11 @@
                         {
                             "name": "fastparse_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.lihaoyi/fastparse_2.12/jars/fastparse_2.12-0.4.2.jar"
+                        },
+                        {
+                            "name": "fastparse_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.lihaoyi/fastparse_2.12/srcs/fastparse_2.12-0.4.2-sources.jar"
                         }
                     ]
                 },
@@ -1821,6 +2121,11 @@
                         {
                             "name": "fastparse-utils_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.lihaoyi/fastparse-utils_2.12/jars/fastparse-utils_2.12-0.4.2.jar"
+                        },
+                        {
+                            "name": "fastparse-utils_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.lihaoyi/fastparse-utils_2.12/srcs/fastparse-utils_2.12-0.4.2-sources.jar"
                         }
                     ]
                 },
@@ -1832,6 +2137,11 @@
                         {
                             "name": "sourcecode_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.lihaoyi/sourcecode_2.12/jars/sourcecode_2.12-0.1.3.jar"
+                        },
+                        {
+                            "name": "sourcecode_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.lihaoyi/sourcecode_2.12/srcs/sourcecode_2.12-0.1.3-sources.jar"
                         }
                     ]
                 },
@@ -1843,6 +2153,11 @@
                         {
                             "name": "protobuf-java",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-3.3.1.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-3.3.1-sources.jar"
                         }
                     ]
                 },
@@ -1854,6 +2169,11 @@
                         {
                             "name": "sbinary_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/sbinary_2.12/jars/sbinary_2.12-0.5.0.jar"
+                        },
+                        {
+                            "name": "sbinary_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/sbinary_2.12/srcs/sbinary_2.12-0.5.0-sources.jar"
                         }
                     ]
                 },
@@ -1865,6 +2185,11 @@
                         {
                             "name": "main-settings_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/main-settings_2.12/jars/main-settings_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "main-settings_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/main-settings_2.12/srcs/main-settings_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1876,6 +2201,11 @@
                         {
                             "name": "command_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/command_2.12/jars/command_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "command_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/command_2.12/srcs/command_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1887,6 +2217,11 @@
                         {
                             "name": "protocol_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/protocol_2.12/jars/protocol_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "protocol_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/protocol_2.12/srcs/protocol_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1898,6 +2233,11 @@
                         {
                             "name": "ipcsocket",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt.ipcsocket/ipcsocket/jars/ipcsocket-1.0.0.jar"
+                        },
+                        {
+                            "name": "ipcsocket",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt.ipcsocket/ipcsocket/srcs/ipcsocket-1.0.0-sources.jar"
                         }
                     ]
                 },
@@ -1909,6 +2249,11 @@
                         {
                             "name": "template-resolver",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/template-resolver/jars/template-resolver-0.1.jar"
+                        },
+                        {
+                            "name": "template-resolver",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/template-resolver/srcs/template-resolver-0.1-sources.jar"
                         }
                     ]
                 },
@@ -1920,6 +2265,11 @@
                         {
                             "name": "core-macros_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/core-macros_2.12/jars/core-macros_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "core-macros_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/core-macros_2.12/srcs/core-macros_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1931,6 +2281,11 @@
                         {
                             "name": "scripted-sbt-redux_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/scripted-sbt-redux_2.12/jars/scripted-sbt-redux_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "scripted-sbt-redux_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/scripted-sbt-redux_2.12/srcs/scripted-sbt-redux_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1942,6 +2297,11 @@
                         {
                             "name": "util-scripted_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-scripted_2.12/jars/util-scripted_2.12-1.2.2.jar"
+                        },
+                        {
+                            "name": "util-scripted_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/util-scripted_2.12/srcs/util-scripted_2.12-1.2.2-sources.jar"
                         }
                     ]
                 },
@@ -1953,6 +2313,11 @@
                         {
                             "name": "scripted-plugin_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/scripted-plugin_2.12/jars/scripted-plugin_2.12-1.2.4.jar"
+                        },
+                        {
+                            "name": "scripted-plugin_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/scripted-plugin_2.12/srcs/scripted-plugin_2.12-1.2.4-sources.jar"
                         }
                     ]
                 },
@@ -1964,6 +2329,11 @@
                         {
                             "name": "log4j-slf4j-impl",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.apache.logging.log4j/log4j-slf4j-impl/jars/log4j-slf4j-impl-2.8.1.jar"
+                        },
+                        {
+                            "name": "log4j-slf4j-impl",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.apache.logging.log4j/log4j-slf4j-impl/srcs/log4j-slf4j-impl-2.8.1-sources.jar"
                         }
                     ]
                 },
@@ -1975,6 +2345,11 @@
                         {
                             "name": "scalacache-caffeine_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.github.cb372/scalacache-caffeine_2.12/jars/scalacache-caffeine_2.12-0.20.0.jar"
+                        },
+                        {
+                            "name": "scalacache-caffeine_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.github.cb372/scalacache-caffeine_2.12/srcs/scalacache-caffeine_2.12-0.20.0-sources.jar"
                         }
                     ]
                 },
@@ -1986,6 +2361,11 @@
                         {
                             "name": "scalacache-core_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.github.cb372/scalacache-core_2.12/jars/scalacache-core_2.12-0.20.0.jar"
+                        },
+                        {
+                            "name": "scalacache-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.github.cb372/scalacache-core_2.12/srcs/scalacache-core_2.12-0.20.0-sources.jar"
                         }
                     ]
                 },
@@ -1997,6 +2377,11 @@
                         {
                             "name": "caffeine",
                             "path": "/Users/dongjin.kim/.ivy2/cache/com.github.ben-manes.caffeine/caffeine/jars/caffeine-2.5.6.jar"
+                        },
+                        {
+                            "name": "caffeine",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/com.github.ben-manes.caffeine/caffeine/srcs/caffeine-2.5.6-sources.jar"
                         }
                     ]
                 },
@@ -2008,6 +2393,11 @@
                         {
                             "name": "librarymanagement-ivy_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/librarymanagement-ivy_2.12/jars/librarymanagement-ivy_2.12-1.2.1.jar"
+                        },
+                        {
+                            "name": "librarymanagement-ivy_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/librarymanagement-ivy_2.12/srcs/librarymanagement-ivy_2.12-1.2.1-sources.jar"
                         }
                     ]
                 },
@@ -2019,6 +2409,11 @@
                         {
                             "name": "ivy",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt.ivy/ivy/jars/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar"
+                        },
+                        {
+                            "name": "ivy",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt.ivy/ivy/srcs/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310-sources.jar"
                         }
                     ]
                 },
@@ -2030,6 +2425,11 @@
                         {
                             "name": "zinc-compile_2.12",
                             "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-compile_2.12/jars/zinc-compile_2.12-1.2.3.jar"
+                        },
+                        {
+                            "name": "zinc-compile_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/dongjin.kim/.ivy2/cache/org.scala-sbt/zinc-compile_2.12/srcs/zinc-compile_2.12-1.2.3-sources.jar"
                         }
                     ]
                 }

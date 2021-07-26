@@ -17,9 +17,9 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "net.ixias" %% "ixias"      % "1.1.20",
-  "net.ixias" %% "ixias-aws"  % "1.1.20",
-  "net.ixias" %% "ixias-play" % "1.1.20",
+  "net.ixias" %% "ixias"      % "1.1.36",
+  "net.ixias" %% "ixias-aws"  % "1.1.36",
+  "net.ixias" %% "ixias-play" % "1.1.36",
   "mysql"          % "mysql-connector-java" % "5.1.+",
   "ch.qos.logback" % "logback-classic"      % "1.1.+",
 )
